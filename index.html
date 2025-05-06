@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Caches im Wandel der Zeit</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Caches im Wandel der Zeit</h1>
+    <p class="slogan">Wer nicht mit der Zeit geht, muss mit der Zeit gehen.</p>
+
+    <div id="pinForm">
+      <input type="password" id="pin" placeholder="PIN eingeben">
+      <button onclick="checkPin()">Bestätigen</button>
+    </div>
+
+    <div id="logForm" style="display:none;">
+      <input type="text" id="name" placeholder="Dein Name">
+      <button id="submitBtn" onclick="submitName()" disabled>Eintragen</button>
+      <p id="locationStatus" style="font-size: 0.9em; color: #ccc;"></p>
+    </div>
+
+    <div id="logbuch" style="display:none;">
+      <h2>Logbuch</h2>
+      <ul id="entries"></ul>
+    </div>
+  </div>
+</body>
+</html>
