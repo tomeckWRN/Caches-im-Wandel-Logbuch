@@ -15,7 +15,7 @@ const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const entriesRef = ref(db, "logbuch");
 
-const correctPIN = "4711";
+const correctPIN = "?4711";
 const targetLat = 48.7456091;
 const targetLng = 8.0474770;
 const radiusMeters = 50;
